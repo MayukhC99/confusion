@@ -35,12 +35,10 @@ class DishDetail extends Component{
 
                 return(
                     <>
-                    <ul key={item.id} className="list-unstyled">
                         <li> { item.comment } </li>
-                    </ul>
-                    <ul className="list-unstyled">
+                        <br/>
                         <li> { ND } </li>
-                    </ul>
+                        <br/>
                     </>
                 );
             });
@@ -48,7 +46,9 @@ class DishDetail extends Component{
             comments=(
                 <div>        
                     <h2>Comments</h2>
-                    { Com }
+                    <ul className="list-unstyled">
+                        { Com }
+                    </ul>
                 </div>
             );
         } else {
