@@ -10,9 +10,17 @@ class DishDetail extends Component{
         this.state={
 
         }
+
+        console.log('constructor() is invoked')
     }   
 
+    componentDidMount(){
+        console.log('componentDidMount() is invoked')
+    }
+
     render(){
+
+        console.log('render() is invoked')
 
         let details;
         let comments;
